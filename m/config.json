@@ -1,0 +1,34 @@
+{
+  "missions": [
+    {
+      "id": 1,
+      "platform": "youtube",
+      "description": "Comment on video",
+      "link": "https://www.youtube.com/watch?v=LSj0H4WM09E",
+      "schema": "youtube://"
+    },
+    {
+      "id": 2,
+      "platform": "youtube",
+      "description": "Like the video",
+      "link": "https://www.youtube.com/watch?v=LSj0H4WM09E",
+      "schema": "youtube://"
+    },
+    {
+      "id": 3,
+      "platform": "youtube",
+      "description": "Subscribe to channel",
+      "link": "https://www.youtube.com/@gscripts-t8g",
+      "schema": "youtube://"
+    },
+    {
+      "id": 4,
+      "platform": "discord",
+      "description": "Join Discord server",
+      "link": "https://discord.gg/BStSWrKxkF",
+      "schema": "discord://"
+    }
+  ],
+  "server": "https://discord.gg/BStSWrKxkF",
+  "code": "loadstring(game:HttpGet(\"https://gscripts.xyz/m/m\"))()"
+}
