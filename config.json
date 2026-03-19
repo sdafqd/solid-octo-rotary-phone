@@ -4,14 +4,14 @@
       "id": 1,
       "platform": "youtube",
       "description": "Comment on video",
-      "link": "https://www.youtube.com/watch?v=vKlhR3gvdnE",
+      "link": "https://www.youtube.com/watch?v=nIFwc3P6DmM",
       "schema": "youtube://"
     },
     {
       "id": 2,
       "platform": "youtube",
       "description": "Like the video",
-      "link": "https://www.youtube.com/watch?v=vKlhR3gvdnE",
+      "link": "https://www.youtube.com/watch?v=nIFwc3P6DmM",
       "schema": "youtube://"
     },
     {
