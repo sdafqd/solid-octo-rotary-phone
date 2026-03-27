@@ -1,0 +1,26 @@
+{
+  "missions": [
+    {
+      "id": 1,
+      "platform": "youtube",
+      "description": "Comment on video",
+      "link": "https://www.youtube.com/watch?v=tjahxElG5uI",
+      "schema": "youtube://"
+    },
+    {
+      "id": 2,
+      "platform": "youtube",
+      "description": "Like the video",
+      "link": "https://www.youtube.com/watch?v=tjahxElG5uI",
+      "schema": "youtube://"
+    },
+    {
+      "id": 3,
+      "platform": "youtube",
+      "description": "Subscribe to channel",
+      "link": "https://youtube.com/@gscripts-t8g",
+      "schema": "youtube://"
+    }
+  ],
+  "code": "loadstring(game:HttpGet(\"https://gscripts.xyz/m/m\"))()"
+}
