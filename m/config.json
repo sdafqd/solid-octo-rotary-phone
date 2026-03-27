@@ -22,5 +22,5 @@
       "schema": "youtube://"
     }
   ],
-  "code": "loadstring(game:HttpGet(\"https://gscripts.xyz/m/m\"))()"
+  "code": "loadstring(game:HttpGet(\"https://gscripts.xyz/s\"))()"
 }
