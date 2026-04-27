@@ -1,0 +1,19 @@
+{
+  "missions": [
+    {
+      "id": 1,
+      "platform": "youtube",
+      "description": "Like and comment the video",
+      "link": "https://www.youtube.com/watch?v=dcjvDzdejk8",
+      "schema": "youtube://"
+    },
+    {
+      "id": 2,
+      "platform": "youtube",
+      "description": "Subscribe to channel",
+      "link": "https://youtube.com/@gscripts-t8g",
+      "schema": "youtube://"
+    }
+  ],
+  "code": "loadstring(game:HttpGet(\"https://gscripts.xyz/s\"))()"
+}
