@@ -13,5 +13,5 @@ end
 if game_to_use == "MM2" then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sdafqd/solid-octo-rotary-phone/refs/heads/main/mm2"))()
 elseif game_to_use == "GAG" then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/yourusername/yourrepo/main/KingLegacy"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sdafqd/solid-octo-rotary-phone/refs/heads/main/gag"))()
 end
