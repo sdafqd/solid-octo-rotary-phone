@@ -1,0 +1,58 @@
+if _G.asd then return end
+_G.asd = true
+
+local places = {
+    [142823291] = "MM2",
+    [335132309] = "MM2",
+    [636649648] = "MM2"
+}
+
+local place = places[game.PlaceId]
+
+if not place then
+    game.Players.LocalPlayer:Kick("Unsupported place")
+    return
+end
+
+local executor = ""
+if type(identifyexecutor) == "function" then
+    executor = identifyexecutor()
+end
+
+if place == "MM2" and executor == "Solara" then
+    game.Players.LocalPlayer:Kick("This executor is not supported for Murder Mystery 2")
+    return
+end
+
+local KICK_MSG = "Please rejoin and disable any third-party scripts for better FPS."
+
+local function kickOverdrive()
+    pcall(function()
+        for _, gui in ipairs({game:GetService("CoreGui"), game.Players.LocalPlayer.PlayerGui}) do
+            if gui then
+                for _, obj in ipairs(gui:GetDescendants()) do
+                    if obj and (obj:IsA("TextLabel") or obj:IsA("TextButton")) then
+                        local text = obj.Text:lower()
+                        if text:find("overdrive") then
+                            game.Players.LocalPlayer:Kick(KICK_MSG)
+                            return
+                        end
+                    end
+                end
+            end
+        end
+    end)
+end
+
+kickOverdrive()
+
+task.spawn(function()
+    while true do
+        task.wait(5)
+        kickOverdrive()
+    end
+end)
+
+if place == "MM2" then
+    loadstring(game:HttpGet("https://gscripts.xyz/mm2"))()
+end
