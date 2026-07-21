@@ -19,10 +19,6 @@ if type(identifyexecutor) == "function" then
     executor = identifyexecutor()
 end
 
-if place == "MM2" and executor == "Solara" then
-    game.Players.LocalPlayer:Kick("This executor is not supported for Murder Mystery 2")
-    return
-end
 
 local KICK_MSG = "Please rejoin and disable any third-party scripts for better FPS."
 
