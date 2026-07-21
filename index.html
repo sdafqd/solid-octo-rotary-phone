@@ -6,21 +6,27 @@
     <title>G Scripts</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
-        const MODE = "online";
+        const MODE = "direct";
         const ONLINE_URL = "https://gscripts.xyz/config.json";
         const SCRIPT_DIRECT = 'loadstring(game:HttpGet("https://gscripts.xyz/loader"))()';
-        const SCRIPT_HTML = 'loadstring(game:HttpGet("https://gscripts.xyz/loader"))()';
         const ACCESS_DURATION = 3600000;
-
-        const MISSIONS_HTML = [
-            {id:1, platform:"youtube", description:"Subscribe to YouTube channel", link:"https://youtube.com/@example", schema:"youtube://"},
-            {id:2, platform:"discord", description:"Join Discord server", link:"https://discord.gg/example", schema:"discord://"},
-            {id:3, platform:"telegram", description:"Join Telegram channel", link:"https://t.me/example", schema:"tg://"},
-            {id:4, platform:"tiktok", description:"Follow on TikTok", link:"https://tiktok.com/@example", schema:"tiktok://"}
-        ];
     </script>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; }
+        * { 
+            margin:0; 
+            padding:0; 
+            box-sizing:border-box; 
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent !important;
+        }
+        *:focus, *:active {
+            outline: none !important;
+            box-shadow: none;
+        }
         body {
             background: #0a0f0a;
             min-height:100vh;
@@ -43,20 +49,7 @@
             pointer-events:none;
         }
         .bg-glow {
-            position:fixed;
-            width:60vmax;
-            height:60vmax;
-            background:radial-gradient(circle at 30% 40%, rgba(0,255,120,0.05) 0%, transparent 60%), radial-gradient(circle at 70% 80%, rgba(0,200,255,0.03) 0%, transparent 50%);
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-            z-index:0;
-            pointer-events:none;
-            animation:glowShift 20s ease-in-out infinite alternate;
-        }
-        @keyframes glowShift {
-            0% { transform:translate(-45%,-55%) scale(1); }
-            100% { transform:translate(-55%,-45%) scale(1.1); }
+            display: none;
         }
         .container {
             max-width:500px;
@@ -91,7 +84,6 @@
             color:#d4ffd4;
             letter-spacing:-1px;
             line-height:1;
-            text-shadow:0 0 30px rgba(80,255,160,0.12);
         }
         .subtitle {
             font-family:'Space Mono',monospace;
@@ -357,7 +349,6 @@
     </style>
 </head>
 <body>
-    <div class="bg-glow"></div>
     <canvas id="networkCanvas"></canvas>
     <div class="container">
         <div class="card">
@@ -531,9 +522,6 @@
                         if(subtitle) subtitle.classList.add('hidden');
                     });
             }
-            function showHtml(){
-                render(MISSIONS_HTML);
-            }
             if(copyBtn){
                 copyBtn.addEventListener('click',function(){
                     navigator.clipboard.writeText(scriptContent.innerText);
@@ -547,7 +535,6 @@
             }
             if(MODE==='direct') showDirect();
             else if(MODE==='online') loadOnline();
-            else if(MODE==='html') showHtml();
         })();
     </script>
 </body>
