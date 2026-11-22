@@ -5241,6 +5241,28 @@ function OfflineFiles._urlForPath(path)
 	return OfflineFiles._baseUrl() .. relative
 end
 
+local ASSET_CACHE_EXTENSIONS = {
+	jpg = true, jpeg = true, png = true, webp = true, gif = true,
+	wav = true, ogg = true, mp3 = true, txt = true, json = true,
+}
+
+function OfflineFiles._cachePath(url)
+	local base = OfflineFiles._baseUrl()
+	if type(url) ~= "string" or base == "" or url:sub(1, #base) ~= base then return nil end
+
+	local relative = url:sub(#base + 1)
+	if not relative:match("^[%w_./%-]+$") or relative:sub(1, 1) == "/" or relative:find("//", 1, true) then
+		return nil
+	end
+	for part in relative:gmatch("[^/]+") do
+		if part:sub(-1) == "." then return nil end
+	end
+	local extension = relative:match("%.([%w]+)$")
+	if not extension or not ASSET_CACHE_EXTENSIONS[extension:lower()] then return nil end
+
+	return "GScripts/assets/" .. relative
+end
+
 local requestSession = tostring(os.time()) .. "_" .. tostring(os.clock()):gsub("%D", "")
 local requestNumber = 0
 
@@ -5315,9 +5337,28 @@ end
 
 function OfflineFiles.create(host)
 	local modifiedFiles = {}
-	local stagedAssets = {}
 	local files = {}
 	local released = false
+
+	local function fetchRemote(url)
+		local target = OfflineFiles._cachePath(url)
+		if target and host.readfile then
+			local ok, cached = pcall(function()
+				if not host.isfile or host.isfile(target) then return host.readfile(target) end
+			end)
+			if ok and type(cached) == "string" and cached ~= "" then return cached, target end
+		end
+
+		local contents = OfflineFiles._download(url)
+		if not contents or not target or not host.writefile then return contents end
+
+		local ok, saved = pcall(function()
+			OfflineFiles._makeFolders(host, target)
+			return host.writefile(target, contents)
+		end)
+		if ok and saved ~= false then return contents, target end
+		return contents
+	end
 
 	local function isRemote(path)
 		local relative = path:gsub("^GScripts/", "")
@@ -5327,7 +5368,7 @@ function OfflineFiles.create(host)
 	function files.isfile(path)
 		path = OfflineFiles._pathKey(path)
 		if isRemote(path) then
-			return OfflineFiles._download(OfflineFiles._urlForPath(path)) ~= nil
+			return fetchRemote(OfflineFiles._urlForPath(path)) ~= nil
 		end
 		return modifiedFiles[path] ~= nil or (host.isfile and host.isfile(OfflineFiles._physicalPath(path))) or false
 	end
@@ -5335,7 +5376,8 @@ function OfflineFiles.create(host)
 	function files.readfile(path)
 		path = OfflineFiles._pathKey(path)
 		if isRemote(path) then
-			return assert(OfflineFiles._download(OfflineFiles._urlForPath(path)), "Remote resource unavailable: " .. path)
+			local contents = fetchRemote(OfflineFiles._urlForPath(path))
+			return assert(contents, "Remote resource unavailable: " .. path)
 		end
 		if modifiedFiles[path] ~= nil then return modifiedFiles[path] end
 		local target = OfflineFiles._physicalPath(path)
@@ -5371,36 +5413,31 @@ function OfflineFiles.create(host)
 
 	function files.getcustomasset(path)
 		assert(getAsset, "Executor needs getcustomasset for local media")
-		return getAsset(OfflineFiles._physicalPath(path))
+		local target = OfflineFiles._physicalPath(path)
+		local cached = OfflineFiles._cachePath(OfflineFiles._urlForPath(path))
+		if cached and host.isfile and not host.isfile(target) and host.isfile(cached) then
+			return getAsset(cached)
+		end
+		return getAsset(target)
 	end
 
 	function files.loadRemoteAsset(path)
-		assert(getAsset and host.writefile, "Executor needs getcustomasset and writefile for remote media")
-		local url = OfflineFiles._urlForPath(path)
-		local bytes = assert(OfflineFiles._download(url), "Remote media unavailable: " .. url)
+		assert(getAsset, "Executor needs getcustomasset for remote media")
 		assert(not released, "Remote media already released")
-		local name = path:match("[^/]+$")
-		local target = "GScripts/runtime_assets/" .. OfflineFiles._nextRequestId() .. "_" .. name
-		OfflineFiles._makeFolders(host, target)
-		host.writefile(target, bytes)
-		if released then
-			if host.delfile then pcall(host.delfile, target) end
-			error("Remote media already released")
-		end
-		table.insert(stagedAssets, target)
+		local url = OfflineFiles._urlForPath(path)
+		local contents, target = fetchRemote(url)
+		assert(contents, "Remote media unavailable: " .. url)
+		assert(target, "Could not save remote media: " .. url)
+		assert(not released, "Remote media already released")
 		return getAsset(target)
 	end
 
 	function files.releaseRemoteAssets()
 		released = true
-		if host.delfile then
-			for _, path in stagedAssets do pcall(host.delfile, path) end
-		end
-		table.clear(stagedAssets)
 	end
 
 	files.getsynasset = files.getcustomasset
-	return files
+	return files, fetchRemote
 end
 
 local RESOURCE_MANIFEST = {
@@ -5681,11 +5718,13 @@ local RESOURCE_MANIFEST = {
 
 local ResourceData = {}
 
-function ResourceData.create()
+function ResourceData.create(fetchRemote)
+	fetchRemote = fetchRemote or OfflineFiles._download
 	local function get(name)
 		local entry = RESOURCE_MANIFEST[name]
 		if not entry then return nil end
-		return OfflineFiles._download(OfflineFiles._urlForPath("cache/" .. entry[1]))
+		local contents = fetchRemote(OfflineFiles._urlForPath("cache/" .. entry[1]))
+		return contents
 	end
 	return {get = get, take = get, fetch = get}
 end
@@ -5706,7 +5745,8 @@ function OfflineRequests.request(context, options)
 	local url, base = options.Url, OfflineFiles._baseUrl()
 	local method = string.upper(options.Method or "GET")
 	if method == "GET" and base ~= "" and url:sub(1, #base) == base then
-		local body = OfflineFiles._download(url)
+		local fetchRemote = context.fetchRemote or OfflineFiles._download
+		local body = fetchRemote(url)
 		if body then return {Success = true, StatusCode = 200, StatusMessage = "OK", Body = body, Headers = {}} end
 	end
 	local route = url:match("^[^?]+") or url
@@ -6013,18 +6053,18 @@ function OfflineEnvironment.create(host, hostGame)
 	environment.setfenv = function(callback) return setfenv(callback, environment) end
 	local hostDebug = lookup("debug")
 	environment.debug = {traceback = hostDebug.traceback, info = hostDebug.info}
-	local files = OfflineFiles.create({
+	local files, fetchRemote = OfflineFiles.create({
 		readfile = lookup("readfile"), writefile = lookup("writefile"), isfile = lookup("isfile"),
 		makefolder = lookup("makefolder"), isfolder = lookup("isfolder"),
-		getcustomasset = lookup("getcustomasset") or lookup("getsynasset"), delfile = lookup("delfile"),
+		getcustomasset = lookup("getcustomasset") or lookup("getsynasset"),
 	})
 
 	for name, callback in files do
 		environment[name] = callback
 	end
-	environment.__gscriptsData = ResourceData.create()
+	environment.__gscriptsData = ResourceData.create(fetchRemote)
 
-	local requestContext = {blocked = diagnostics.blocked}
+	local requestContext = {blocked = diagnostics.blocked, fetchRemote = fetchRemote}
 	local function request(options)
 		return OfflineRequests.request(requestContext, options)
 	end
@@ -23544,8 +23584,7 @@ end
 
 function WeaponSkins.load(state)
 	local context, environment = state.context, state.context.environment
-	local url = OfflineFiles._urlForPath("GScripts/cache/skins_db.16177a2f.txt")
-	local encoded = assert(OfflineFiles._download(url), "Failed to download weapon skin catalog from " .. url)
+	local encoded = environment.readfile("GScripts/cache/skins_db.16177a2f.txt")
 	local database = context.http:JSONDecode(encoded)
 	assert(type(database) == "table" and next(database), "Invalid or empty weapon skin catalog")
 	for key, entry in database do if type(entry) ~= "table" then database[key] = nil end end
