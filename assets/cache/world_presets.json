@@ -1,0 +1,3216 @@
+{
+  "customSkies": [
+    {
+      "key": "realsky",
+      "name": "Realistic Sky",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          18603249071,
+          18603241716,
+          18603244510,
+          18603245276,
+          18603246382,
+          18603261859
+        ],
+        "moon": 1.5,
+        "moonTex": "",
+        "stars": 5000,
+        "sun": 60,
+        "sunTex": ""
+      }
+    },
+    {
+      "key": "cloudyday",
+      "name": "Cloudy Day",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          679786546,
+          680029379,
+          679786832,
+          679786679,
+          679786411,
+          679787023
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "valley",
+      "name": "Mountain Valley",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          324014980,
+          324015477,
+          324014995,
+          324014679,
+          324015013,
+          324015409
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "mirror",
+      "name": "Mirror Clouds",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          150335574,
+          150335585,
+          150335628,
+          150335620,
+          150335610,
+          150335642
+        ],
+        "moon": 11,
+        "stars": 1334,
+        "sun": 21
+      }
+    },
+    {
+      "key": "darkstorm",
+      "name": "Dark Storm",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          5098786959,
+          5098787359,
+          5098787913,
+          5098788567,
+          5098789278,
+          5098789770
+        ],
+        "moon": 0,
+        "stars": 0,
+        "sun": 15
+      }
+    },
+    {
+      "key": "rainsky",
+      "name": "Rain Sky",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          4495864450,
+          4495864887,
+          4495865458,
+          4495866035,
+          4495866584,
+          4495867486
+        ],
+        "moon": 1,
+        "moonTex": "",
+        "stars": 3000,
+        "sun": 1,
+        "sunTex": ""
+      }
+    },
+    {
+      "key": "animesky",
+      "name": "Anime Sky",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          15983968922,
+          15983966825,
+          15983965025,
+          15983967420,
+          15983966246,
+          15983964246
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "animeocean",
+      "name": "Anime Ocean",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          18351376859,
+          18351374919,
+          18351376800,
+          18351376469,
+          18351376457,
+          18351377189
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "heavensky",
+      "name": "Heavenly Clouds",
+      "spec": {
+        "faces": [
+          81858382098344,
+          138472117789684,
+          95687237979398,
+          84924000207295,
+          99961685452126,
+          104038404823203
+        ],
+        "moon": 11,
+        "moonTex": "rbxassetid://6444320592",
+        "stars": 5000,
+        "sun": 11,
+        "sunTex": "rbxassetid://6196665106"
+      }
+    },
+    {
+      "key": "rainbow",
+      "name": "Rainbow Clouds",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          16573631102,
+          16573631950,
+          16573632795,
+          16573633258,
+          16573633908,
+          16573634370
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "violet",
+      "name": "Violet Dream",
+      "spec": {
+        "faces": [
+          570557514,
+          570557775,
+          570557559,
+          570557620,
+          570557672,
+          570557727
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "cartoon",
+      "name": "Cartoon Sky",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          5333954202,
+          5333944933,
+          5333954202,
+          5333954202,
+          5333954202,
+          5333943668
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "pastel",
+      "name": "Pastel Sky",
+      "spec": {
+        "faces": [
+          566605702,
+          566605472,
+          566605507,
+          566605542,
+          566605588,
+          566605643
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "pinksky",
+      "name": "Pink Sky",
+      "spec": {
+        "faces": [
+          271042516,
+          271077243,
+          271042556,
+          271042310,
+          271042467,
+          271077958
+        ],
+        "moon": 11,
+        "stars": 1334,
+        "sun": 21
+      }
+    },
+    {
+      "key": "mcsky",
+      "name": "Minecraft Sky",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          599982473,
+          599982473,
+          599982473,
+          599982473,
+          599982473,
+          599982473
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "blood",
+      "name": "Blood Sky",
+      "spec": {
+        "faces": [
+          108929045660200,
+          78646480540009,
+          90546017435179,
+          109838453114563,
+          94190734796082,
+          126944775797063
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "moonlit",
+      "name": "Moonlit Night",
+      "spec": {
+        "faces": [
+          6285719338,
+          6285721078,
+          6285722964,
+          6285724682,
+          6285726335,
+          6285730635
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "starry",
+      "name": "Starry Night",
+      "spec": {
+        "faces": [
+          154185004,
+          154184960,
+          154185021,
+          154184943,
+          154184972,
+          154185031
+        ],
+        "moon": 11,
+        "stars": 0,
+        "sun": 21
+      }
+    },
+    {
+      "key": "spacesky",
+      "name": "Space Sky",
+      "spec": {
+        "faces": [
+          16262356578,
+          16262358026,
+          16262360469,
+          16262362003,
+          16262363873,
+          16262366016
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "orbit",
+      "name": "Earth Orbit",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          166509999,
+          166510057,
+          166510116,
+          166510092,
+          166510131,
+          166510114
+        ],
+        "moon": 11,
+        "stars": 0,
+        "sun": 21
+      }
+    },
+    {
+      "key": "nebula",
+      "name": "Pink Nebula",
+      "spec": {
+        "celestial": true,
+        "faces": [
+          13581437029,
+          13581439832,
+          13581447312,
+          13581443463,
+          13581452875,
+          13581450222
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    },
+    {
+      "key": "galaxy",
+      "name": "Rainbow Galaxy",
+      "spec": {
+        "faces": [
+          3192404459,
+          3192404459,
+          3192404459,
+          3192404459,
+          3192404459,
+          3192404459
+        ],
+        "moon": 11,
+        "stars": 3000,
+        "sun": 21
+      }
+    }
+  ],
+  "lighting": [
+    {
+      "extra": {
+        "sky": "realday",
+        "weather": {
+          "amount": 25,
+          "kind": "Pollen",
+          "wind": 2
+        }
+      },
+      "name": "Natural",
+      "values": {
+        "ambientScale": 0.7,
+        "ambientTint": [
+          0.96,
+          1,
+          1.06
+        ],
+        "bloomIntensity": 0.2,
+        "bloomOn": true,
+        "bloomSize": 22,
+        "bloomThreshold": 1.4,
+        "brightScale": 1.12,
+        "contrast": 0.13,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.5882352941176471,
+          0.6666666666666666,
+          0.7529411764705882
+        ],
+        "fogEnd": 1100,
+        "fogOn": true,
+        "fogStart": 140,
+        "gradeOn": true,
+        "raysIntensity": 0.04,
+        "raysOn": true,
+        "raysSpread": 0.65,
+        "saturation": 0.1,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.18,
+        "shiftBottom": [
+          0.03137254901960784,
+          0.0392156862745098,
+          0.07058823529411765
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.9568627450980393,
+          0.8941176470588236
+        ],
+        "tint": [
+          1,
+          0.9803921568627451,
+          0.9568627450980393
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "haze",
+        "weather": {
+          "amount": 25,
+          "kind": "Leaves",
+          "wind": 4
+        }
+      },
+      "name": "Cinematic",
+      "values": {
+        "ambientScale": 0.52,
+        "ambientTint": [
+          0.86,
+          0.98,
+          1.16
+        ],
+        "bloomIntensity": 0.28,
+        "bloomOn": true,
+        "bloomSize": 24,
+        "bloomThreshold": 1.3,
+        "brightScale": 1.15,
+        "contrast": 0.22,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.20392156862745098,
+          0.2901960784313726,
+          0.34509803921568627
+        ],
+        "fogEnd": 650,
+        "fogOn": true,
+        "fogStart": 70,
+        "gradeOn": true,
+        "raysIntensity": 0.07,
+        "raysOn": true,
+        "raysSpread": 0.7,
+        "saturation": 0.04,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.14,
+        "shiftBottom": [
+          0.07058823529411765,
+          0.1803921568627451,
+          0.24313725490196078
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.8705882352941177,
+          0.6980392156862745
+        ],
+        "time": 15.6,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.9411764705882353,
+          0.8705882352941177
+        ],
+        "vignette": 24,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "golden",
+        "weather": {
+          "amount": 60,
+          "kind": "Pollen",
+          "wind": 2
+        }
+      },
+      "name": "Golden Hour",
+      "values": {
+        "ambientScale": 0.6,
+        "ambientTint": [
+          1.12,
+          0.96,
+          0.82
+        ],
+        "bloomIntensity": 0.32,
+        "bloomOn": true,
+        "bloomSize": 26,
+        "bloomThreshold": 1.2,
+        "brightScale": 1.12,
+        "contrast": 0.16,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.5882352941176471,
+          0.3764705882352941,
+          0.25098039215686274
+        ],
+        "fogEnd": 600,
+        "fogOn": true,
+        "fogStart": 60,
+        "gradeOn": true,
+        "raysIntensity": 0.12,
+        "raysOn": true,
+        "raysSpread": 0.85,
+        "saturation": 0.14,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.15,
+        "shiftBottom": [
+          0.18823529411764706,
+          0.10196078431372549,
+          0.08627450980392157
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.7843137254901961,
+          0.5490196078431373
+        ],
+        "time": 17,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.9098039215686274,
+          0.8
+        ],
+        "vignette": 18,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "dusk",
+        "weather": {
+          "amount": 45,
+          "kind": "Leaves",
+          "wind": 6
+        }
+      },
+      "name": "Dusk",
+      "values": {
+        "ambientScale": 0.48,
+        "ambientTint": [
+          1.1,
+          0.86,
+          1.08
+        ],
+        "bloomIntensity": 0.38,
+        "bloomOn": true,
+        "bloomSize": 28,
+        "bloomThreshold": 1.15,
+        "brightScale": 1.05,
+        "contrast": 0.18,
+        "envDiffuse": 0.4,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.25098039215686274,
+          0.1568627450980392,
+          0.2901960784313726
+        ],
+        "fogEnd": 480,
+        "fogOn": true,
+        "fogStart": 40,
+        "gradeOn": true,
+        "raysIntensity": 0.09,
+        "raysOn": true,
+        "raysSpread": 0.8,
+        "saturation": 0.12,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.18,
+        "shiftBottom": [
+          0.22745098039215686,
+          0.10980392156862745,
+          0.2823529411764706
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.6588235294117647,
+          0.48627450980392156
+        ],
+        "time": 18.2,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.8705882352941177,
+          0.8392156862745098
+        ],
+        "vignette": 24,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "mountains",
+        "weather": {
+          "amount": 60,
+          "kind": "Fireflies",
+          "wind": 1
+        }
+      },
+      "name": "Night",
+      "values": {
+        "ambientScale": 0.6,
+        "ambientTint": [
+          0.74,
+          0.88,
+          1.3
+        ],
+        "bloomIntensity": 0.5,
+        "bloomOn": true,
+        "bloomSize": 28,
+        "bloomThreshold": 1.05,
+        "brightScale": 1.05,
+        "celestial": true,
+        "contrast": 0.18,
+        "envDiffuse": 0.35,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.16,
+        "exposureOn": true,
+        "fogColour": [
+          0.08627450980392157,
+          0.11764705882352941,
+          0.20392156862745098
+        ],
+        "fogEnd": 420,
+        "fogOn": true,
+        "fogStart": 45,
+        "gradeOn": true,
+        "moonSize": 22,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.04,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.25,
+        "shiftBottom": [
+          0.054901960784313725,
+          0.0784313725490196,
+          0.1803921568627451
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7058823529411765,
+          0.7843137254901961,
+          1
+        ],
+        "skyOn": true,
+        "stars": 5000,
+        "sunSize": 8,
+        "time": 0.4,
+        "timeOn": true,
+        "tint": [
+          0.8470588235294118,
+          0.8941176470588236,
+          1
+        ],
+        "vignette": 28,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "aurora1",
+        "weather": {
+          "amount": 35,
+          "kind": "Snow",
+          "wind": 3
+        }
+      },
+      "name": "Moonlight",
+      "values": {
+        "ambientScale": 0.62,
+        "ambientTint": [
+          0.8,
+          0.92,
+          1.25
+        ],
+        "bloomIntensity": 0.45,
+        "bloomOn": true,
+        "bloomSize": 28,
+        "bloomThreshold": 1.1,
+        "brightScale": 1.2,
+        "celestial": true,
+        "contrast": 0.15,
+        "envDiffuse": 0.4,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.12,
+        "exposureOn": true,
+        "fogColour": [
+          0.1568627450980392,
+          0.21176470588235294,
+          0.33725490196078434
+        ],
+        "fogEnd": 700,
+        "fogOn": true,
+        "fogStart": 80,
+        "gradeOn": true,
+        "moonSize": 30,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.02,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.22,
+        "shiftBottom": [
+          0.06274509803921569,
+          0.09411764705882353,
+          0.20392156862745098
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7686274509803922,
+          0.8392156862745098,
+          1
+        ],
+        "skyOn": true,
+        "stars": 5000,
+        "sunSize": 8,
+        "time": 23,
+        "timeOn": true,
+        "tint": [
+          0.8784313725490196,
+          0.9098039215686274,
+          1
+        ],
+        "vignette": 22,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "fog",
+        "weather": {
+          "amount": 100,
+          "kind": "Mist",
+          "wind": 2
+        }
+      },
+      "name": "Dark Fog",
+      "values": {
+        "ambientScale": 0.56,
+        "ambientTint": [
+          0.8,
+          0.9,
+          1.15
+        ],
+        "bloomIntensity": 0.6,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1,
+        "brightScale": 1,
+        "celestial": true,
+        "contrast": 0.2,
+        "envDiffuse": 0.35,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.05,
+        "exposureOn": true,
+        "fogColour": [
+          0.13333333333333333,
+          0.1568627450980392,
+          0.21176470588235294
+        ],
+        "fogEnd": 230,
+        "fogOn": true,
+        "fogStart": 10,
+        "gradeOn": true,
+        "moonSize": 16,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.15,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.35,
+        "shiftBottom": [
+          0.047058823529411764,
+          0.054901960784313725,
+          0.08627450980392157
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7450980392156863,
+          0.7843137254901961,
+          0.8627450980392157
+        ],
+        "skyOn": true,
+        "stars": 2000,
+        "sunSize": 8,
+        "time": 2,
+        "timeOn": true,
+        "tint": [
+          0.8627450980392157,
+          0.8862745098039215,
+          0.9333333333333333
+        ],
+        "vignette": 34,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "fiery",
+        "weather": {
+          "amount": 60,
+          "kind": "Embers",
+          "wind": 4
+        }
+      },
+      "name": "Blood Moon",
+      "values": {
+        "ambientScale": 0.5,
+        "ambientTint": [
+          1.35,
+          0.6,
+          0.6
+        ],
+        "bloomIntensity": 0.55,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1.05,
+        "brightScale": 1.1,
+        "celestial": true,
+        "contrast": 0.24,
+        "envDiffuse": 0.35,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.1,
+        "exposureOn": true,
+        "fogColour": [
+          0.1803921568627451,
+          0.03137254901960784,
+          0.047058823529411764
+        ],
+        "fogEnd": 330,
+        "fogOn": true,
+        "fogStart": 30,
+        "gradeOn": true,
+        "moonSize": 34,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.08,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.25,
+        "shiftBottom": [
+          0.1568627450980392,
+          0.023529411764705882,
+          0.0392156862745098
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.47058823529411764,
+          0.43137254901960786
+        ],
+        "skyOn": true,
+        "stars": 2500,
+        "sunSize": 8,
+        "time": 0,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.807843137254902,
+          0.7843137254901961
+        ],
+        "vignette": 34,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "storm",
+        "weather": {
+          "amount": 55,
+          "kind": "Ash",
+          "wind": 3
+        }
+      },
+      "name": "Horror",
+      "values": {
+        "ambientScale": 0.48,
+        "ambientTint": [
+          0.8,
+          0.95,
+          0.82
+        ],
+        "bloomIntensity": 0.4,
+        "bloomOn": true,
+        "bloomSize": 24,
+        "bloomThreshold": 1.1,
+        "brightScale": 1,
+        "celestial": true,
+        "contrast": 0.28,
+        "envDiffuse": 0.3,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.08,
+        "exposureOn": true,
+        "fogColour": [
+          0.08627450980392157,
+          0.10980392156862745,
+          0.08627450980392157
+        ],
+        "fogEnd": 190,
+        "fogOn": true,
+        "fogStart": 8,
+        "gradeOn": true,
+        "moonSize": 12,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.4,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.3,
+        "shiftBottom": [
+          0.03137254901960784,
+          0.047058823529411764,
+          0.03137254901960784
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7843137254901961,
+          0.8392156862745098,
+          0.7686274509803922
+        ],
+        "skyOn": true,
+        "stars": 0,
+        "sunSize": 8,
+        "time": 1,
+        "timeOn": true,
+        "tint": [
+          0.8392156862745098,
+          0.8862745098039215,
+          0.807843137254902
+        ],
+        "vignette": 46,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "cumulus",
+        "weather": {
+          "amount": 50,
+          "kind": "Blossom",
+          "wind": 5
+        }
+      },
+      "name": "Vivid",
+      "values": {
+        "ambientScale": 0.72,
+        "ambientTint": [
+          1,
+          1,
+          1
+        ],
+        "bloomIntensity": 0.24,
+        "bloomOn": true,
+        "bloomSize": 20,
+        "bloomThreshold": 1.35,
+        "brightScale": 1.1,
+        "contrast": 0.16,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.5490196078431373,
+          0.6862745098039216,
+          0.8431372549019608
+        ],
+        "fogEnd": 1200,
+        "fogOn": true,
+        "fogStart": 160,
+        "gradeOn": true,
+        "raysIntensity": 0.05,
+        "raysOn": true,
+        "raysSpread": 0.65,
+        "saturation": 0.32,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.14,
+        "shiftBottom": [
+          0.03137254901960784,
+          0.0392156862745098,
+          0.07058823529411765
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.9725490196078431,
+          0.9333333333333333
+        ],
+        "tint": [
+          1,
+          0.9882352941176471,
+          0.9803921568627451
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "overcast",
+        "weather": {
+          "amount": 55,
+          "kind": "Mist",
+          "wind": 4
+        }
+      },
+      "name": "Overcast",
+      "values": {
+        "ambientScale": 0.66,
+        "ambientTint": [
+          0.94,
+          0.98,
+          1.06
+        ],
+        "bloomIntensity": 0.1,
+        "bloomOn": true,
+        "bloomSize": 22,
+        "bloomThreshold": 1.5,
+        "brightScale": 0.95,
+        "cloudColour": [
+          0.6666666666666666,
+          0.6901960784313725,
+          0.7294117647058823
+        ],
+        "cloudCover": 0.9,
+        "cloudDensity": 0.85,
+        "cloudsOn": true,
+        "contrast": 0.1,
+        "envDiffuse": 0.55,
+        "envOn": true,
+        "envSpecular": 0.7,
+        "fogColour": [
+          0.4627450980392157,
+          0.49411764705882355,
+          0.5411764705882353
+        ],
+        "fogEnd": 360,
+        "fogOn": true,
+        "fogStart": 25,
+        "gradeOn": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.18,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.55,
+        "shiftBottom": [
+          0.0784313725490196,
+          0.08627450980392157,
+          0.10196078431372549
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.8392156862745098,
+          0.8705882352941177,
+          0.9098039215686274
+        ],
+        "tint": [
+          0.9098039215686274,
+          0.9333333333333333,
+          0.9647058823529412
+        ],
+        "vignette": 14,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "overcast",
+        "weather": {
+          "amount": 40,
+          "kind": "Snow",
+          "wind": 3
+        }
+      },
+      "name": "Noir",
+      "values": {
+        "ambientScale": 0.5,
+        "ambientTint": [
+          1,
+          1,
+          1
+        ],
+        "bloomIntensity": 0.25,
+        "bloomOn": true,
+        "bloomSize": 22,
+        "bloomThreshold": 1.3,
+        "brightScale": 1.1,
+        "contrast": 0.36,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.09411764705882353,
+          0.09411764705882353,
+          0.10980392156862745
+        ],
+        "fogEnd": 320,
+        "fogOn": true,
+        "fogStart": 30,
+        "gradeOn": true,
+        "raysIntensity": 0.05,
+        "raysOn": true,
+        "raysSpread": 0.65,
+        "saturation": -1,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.12,
+        "shiftBottom": [
+          0.0392156862745098,
+          0.0392156862745098,
+          0.047058823529411764
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.9803921568627451,
+          0.9803921568627451,
+          1
+        ],
+        "tint": [
+          0.9411764705882353,
+          0.9411764705882353,
+          0.9647058823529412
+        ],
+        "vignette": 40,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "neon",
+        "weather": {
+          "amount": 55,
+          "fireflyColour": [
+            1,
+            0.35294117647058826,
+            0.8627450980392157
+          ],
+          "kind": "Fireflies",
+          "wind": 1
+        }
+      },
+      "name": "Neon",
+      "values": {
+        "ambientScale": 0.55,
+        "ambientTint": [
+          1.1,
+          0.82,
+          1.25
+        ],
+        "bloomIntensity": 0.7,
+        "bloomOn": true,
+        "bloomSize": 34,
+        "bloomThreshold": 1,
+        "brightScale": 1.25,
+        "celestial": true,
+        "contrast": 0.2,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.15,
+        "exposureOn": true,
+        "fogColour": [
+          0.1568627450980392,
+          0.054901960784313725,
+          0.22745098039215686
+        ],
+        "fogEnd": 320,
+        "fogOn": true,
+        "fogStart": 30,
+        "gradeOn": true,
+        "moonSize": 14,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.26,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.22,
+        "shiftBottom": [
+          0,
+          0.5882352941176471,
+          0.9019607843137255
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.47058823529411764,
+          0.8627450980392157
+        ],
+        "skyOn": true,
+        "stars": 3000,
+        "sunSize": 8,
+        "time": 21,
+        "timeOn": true,
+        "tint": [
+          0.9647058823529412,
+          0.9019607843137255,
+          1
+        ],
+        "vignette": 22,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "clear",
+        "weather": false
+      },
+      "name": "Competitive",
+      "values": {
+        "ambientScale": 0.92,
+        "ambientTint": [
+          1,
+          1,
+          1
+        ],
+        "bloomIntensity": 0.1,
+        "bloomOn": true,
+        "bloomSize": 16,
+        "bloomThreshold": 1.8,
+        "brightScale": 1.04,
+        "contrast": 0.15,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "gradeOn": true,
+        "raysIntensity": 0.02,
+        "raysOn": true,
+        "raysSpread": 0.5,
+        "saturation": 0.1,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.05,
+        "shiftBottom": [
+          0,
+          0,
+          0
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.9882352941176471,
+          0.9882352941176471,
+          1
+        ],
+        "tint": [
+          0.9803921568627451,
+          0.9882352941176471,
+          1
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "realday",
+        "weather": false
+      },
+      "name": "Ultra Realism",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.68,
+        "ambientTint": [
+          0.97,
+          1,
+          1.05
+        ],
+        "bloomIntensity": 0.22,
+        "bloomOn": true,
+        "bloomSize": 22,
+        "bloomThreshold": 1.35,
+        "brightScale": 1.14,
+        "contrast": 0.15,
+        "dofFar": 0.12,
+        "dofFocus": 60,
+        "dofOn": true,
+        "dofRadius": 80,
+        "envDiffuse": 0.6,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.5882352941176471,
+          0.6745098039215687,
+          0.7764705882352941
+        ],
+        "fogEnd": 1300,
+        "fogOn": true,
+        "fogStart": 160,
+        "gradeOn": true,
+        "lampBoost": 1.35,
+        "lampShadows": true,
+        "lat": 28,
+        "latOn": true,
+        "mats": "HD Realistic",
+        "raysIntensity": 0.05,
+        "raysOn": true,
+        "raysSpread": 0.65,
+        "saturation": 0.1,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.1,
+        "shiftBottom": [
+          0.03137254901960784,
+          0.0392156862745098,
+          0.07058823529411765
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.9568627450980393,
+          0.8941176470588236
+        ],
+        "time": 14.2,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.9803921568627451,
+          0.9568627450980393
+        ],
+        "tone": "Default",
+        "toneOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "golden",
+        "weather": {
+          "amount": 45,
+          "kind": "Pollen",
+          "wind": 2
+        }
+      },
+      "name": "Golden Valley",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.6,
+        "ambientTint": [
+          1.12,
+          0.96,
+          0.82
+        ],
+        "bloomIntensity": 0.34,
+        "bloomOn": true,
+        "bloomSize": 26,
+        "bloomThreshold": 1.2,
+        "brightScale": 1.12,
+        "contrast": 0.17,
+        "dofFar": 0.16,
+        "dofFocus": 50,
+        "dofOn": true,
+        "dofRadius": 60,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.5882352941176471,
+          0.3843137254901961,
+          0.25882352941176473
+        ],
+        "fogEnd": 650,
+        "fogOn": true,
+        "fogStart": 70,
+        "gradeOn": true,
+        "lampBoost": 1.3,
+        "lampShadows": true,
+        "lat": 55,
+        "latOn": true,
+        "mats": "HD Realistic",
+        "raysIntensity": 0.15,
+        "raysOn": true,
+        "raysSpread": 0.85,
+        "saturation": 0.16,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.14,
+        "shiftBottom": [
+          0.18823529411764706,
+          0.10196078431372549,
+          0.08627450980392157
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.7843137254901961,
+          0.5490196078431373
+        ],
+        "time": 17.2,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.9098039215686274,
+          0.8
+        ],
+        "vignette": 18,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "storm",
+        "weather": {
+          "amount": 55,
+          "kind": "Mist",
+          "wind": 3
+        }
+      },
+      "name": "Rainy Night",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.8,
+        "ambientTint": [
+          0.78,
+          0.9,
+          1.25
+        ],
+        "bloomIntensity": 0.6,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1,
+        "brightScale": 1.15,
+        "celestial": true,
+        "contrast": 0.2,
+        "dofFar": 0.1,
+        "dofFocus": 50,
+        "dofOn": true,
+        "dofRadius": 60,
+        "envDiffuse": 0.4,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.34,
+        "exposureOn": true,
+        "fogColour": [
+          0.1803921568627451,
+          0.22745098039215686,
+          0.32941176470588235
+        ],
+        "fogEnd": 560,
+        "fogOn": true,
+        "fogStart": 50,
+        "gradeOn": true,
+        "lampBoost": 2.3,
+        "lampShadows": true,
+        "mats": "HD Wet",
+        "moonSize": 16,
+        "neonGlow": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.02,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.22,
+        "shiftBottom": [
+          0.047058823529411764,
+          0.07058823529411765,
+          0.1568627450980392
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.6666666666666666,
+          0.7686274509803922,
+          1
+        ],
+        "skyOn": true,
+        "stars": 1500,
+        "sunSize": 8,
+        "time": 23.5,
+        "timeOn": true,
+        "tint": [
+          0.8392156862745098,
+          0.8862745098039215,
+          1
+        ],
+        "vignette": 26,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "neon",
+        "weather": {
+          "amount": 45,
+          "fireflyColour": [
+            1,
+            0.35294117647058826,
+            0.8627450980392157
+          ],
+          "kind": "Fireflies",
+          "wind": 1
+        }
+      },
+      "name": "Neon City",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.8,
+        "ambientTint": [
+          1.1,
+          0.82,
+          1.25
+        ],
+        "bloomIntensity": 0.8,
+        "bloomOn": true,
+        "bloomSize": 34,
+        "bloomThreshold": 0.95,
+        "brightScale": 1.3,
+        "celestial": true,
+        "contrast": 0.2,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.32,
+        "exposureOn": true,
+        "fogColour": [
+          0.25098039215686274,
+          0.10196078431372549,
+          0.35294117647058826
+        ],
+        "fogEnd": 500,
+        "fogOn": true,
+        "fogStart": 40,
+        "gradeOn": true,
+        "lampBoost": 2,
+        "lampShadows": true,
+        "mats": "HD Wet",
+        "moonSize": 14,
+        "neonGlow": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.28,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.2,
+        "shiftBottom": [
+          0,
+          0.5882352941176471,
+          0.9019607843137255
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.47058823529411764,
+          0.8627450980392157
+        ],
+        "skyOn": true,
+        "stars": 3000,
+        "sunSize": 8,
+        "time": 21,
+        "timeOn": true,
+        "tint": [
+          0.9647058823529412,
+          0.9019607843137255,
+          1
+        ],
+        "vignette": 22,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "aurora1",
+        "weather": {
+          "amount": 60,
+          "kind": "Snow",
+          "wind": 4
+        }
+      },
+      "name": "Frostbite",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.84,
+        "ambientTint": [
+          0.86,
+          0.95,
+          1.22
+        ],
+        "bloomIntensity": 0.42,
+        "bloomOn": true,
+        "bloomSize": 28,
+        "bloomThreshold": 1.1,
+        "brightScale": 1.25,
+        "celestial": true,
+        "contrast": 0.16,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.3,
+        "exposureOn": true,
+        "fogColour": [
+          0.3764705882352941,
+          0.4392156862745098,
+          0.5647058823529412
+        ],
+        "fogEnd": 700,
+        "fogOn": true,
+        "fogStart": 80,
+        "gradeOn": true,
+        "lampBoost": 1.8,
+        "lampShadows": true,
+        "mats": "HD Realistic",
+        "moonSize": 26,
+        "neonGlow": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.12,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.22,
+        "shiftBottom": [
+          0.07058823529411765,
+          0.10980392156862745,
+          0.2196078431372549
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7843137254901961,
+          0.8627450980392157,
+          1
+        ],
+        "skyOn": true,
+        "stars": 4000,
+        "sunSize": 8,
+        "time": 22.5,
+        "timeOn": true,
+        "tint": [
+          0.8823529411764706,
+          0.9215686274509803,
+          1
+        ],
+        "vignette": 22,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "haze",
+        "weather": {
+          "amount": 20,
+          "kind": "Leaves",
+          "wind": 4
+        }
+      },
+      "name": "Cinematic Film",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.52,
+        "ambientTint": [
+          0.86,
+          0.98,
+          1.16
+        ],
+        "bloomIntensity": 0.28,
+        "bloomOn": true,
+        "bloomSize": 24,
+        "bloomThreshold": 1.3,
+        "brightScale": 1.15,
+        "contrast": 0.23,
+        "dofFar": 0.24,
+        "dofFocus": 45,
+        "dofOn": true,
+        "dofRadius": 45,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.20392156862745098,
+          0.2901960784313726,
+          0.34509803921568627
+        ],
+        "fogEnd": 650,
+        "fogOn": true,
+        "fogStart": 70,
+        "gradeOn": true,
+        "lampBoost": 1.3,
+        "lat": 48,
+        "latOn": true,
+        "mats": "HD Worn",
+        "raysIntensity": 0.08,
+        "raysOn": true,
+        "raysSpread": 0.7,
+        "saturation": 0.04,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.14,
+        "shiftBottom": [
+          0.07058823529411765,
+          0.1803921568627451,
+          0.24313725490196078
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.8705882352941177,
+          0.6980392156862745
+        ],
+        "time": 15.6,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.9411764705882353,
+          0.8705882352941177
+        ],
+        "tone": "Default",
+        "toneOn": true,
+        "vignette": 30,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "fiery",
+        "weather": {
+          "amount": 60,
+          "kind": "Embers",
+          "wind": 4
+        }
+      },
+      "name": "Blood Moon",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.7,
+        "ambientTint": [
+          1.35,
+          0.6,
+          0.6
+        ],
+        "bloomIntensity": 0.55,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1.05,
+        "brightScale": 1.15,
+        "celestial": true,
+        "contrast": 0.24,
+        "envDiffuse": 0.35,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.26,
+        "exposureOn": true,
+        "fogColour": [
+          0.1803921568627451,
+          0.03137254901960784,
+          0.047058823529411764
+        ],
+        "fogEnd": 340,
+        "fogOn": true,
+        "fogStart": 30,
+        "gradeOn": true,
+        "lampBoost": 1.6,
+        "mats": "HD Worn",
+        "moonSize": 34,
+        "neonGlow": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.08,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.25,
+        "shiftBottom": [
+          0.1568627450980392,
+          0.023529411764705882,
+          0.0392156862745098
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.47058823529411764,
+          0.43137254901960786
+        ],
+        "skyOn": true,
+        "stars": 2500,
+        "sunSize": 8,
+        "time": 0,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.807843137254902,
+          0.7843137254901961
+        ],
+        "vignette": 34,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "fog",
+        "weather": {
+          "amount": 40,
+          "kind": "Ash",
+          "wind": 2
+        }
+      },
+      "name": "Silent Fog",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.74,
+        "ambientTint": [
+          0.82,
+          0.9,
+          1.12
+        ],
+        "bloomIntensity": 0.6,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1,
+        "brightScale": 1.05,
+        "celestial": true,
+        "contrast": 0.22,
+        "envDiffuse": 0.35,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.22,
+        "exposureOn": true,
+        "fogColour": [
+          0.20392156862745098,
+          0.23529411764705882,
+          0.2980392156862745
+        ],
+        "fogEnd": 300,
+        "fogOn": true,
+        "fogStart": 14,
+        "gradeOn": true,
+        "lampBoost": 2,
+        "lampShadows": true,
+        "mats": "HD Worn",
+        "moonSize": 16,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.2,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.35,
+        "shiftBottom": [
+          0.047058823529411764,
+          0.054901960784313725,
+          0.08627450980392157
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7450980392156863,
+          0.7843137254901961,
+          0.8627450980392157
+        ],
+        "skyOn": true,
+        "stars": 1500,
+        "sunSize": 8,
+        "time": 2,
+        "timeOn": true,
+        "tint": [
+          0.8627450980392157,
+          0.8862745098039215,
+          0.9333333333333333
+        ],
+        "vignette": 36,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "cumulus",
+        "weather": {
+          "amount": 55,
+          "kind": "Blossom",
+          "wind": 5
+        }
+      },
+      "name": "Dreamscape",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.74,
+        "ambientTint": [
+          1.04,
+          0.98,
+          1.08
+        ],
+        "bloomIntensity": 0.38,
+        "bloomOn": true,
+        "bloomSize": 26,
+        "bloomThreshold": 1.15,
+        "brightScale": 1.12,
+        "contrast": 0.12,
+        "dofFar": 0.12,
+        "dofFocus": 60,
+        "dofOn": true,
+        "dofRadius": 80,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.8627450980392157,
+          0.7450980392156863,
+          0.9019607843137255
+        ],
+        "fogEnd": 1000,
+        "fogOn": true,
+        "fogStart": 140,
+        "gradeOn": true,
+        "lampBoost": 1.2,
+        "lat": 35,
+        "latOn": true,
+        "mats": "HD Realistic",
+        "raysIntensity": 0.08,
+        "raysOn": true,
+        "raysSpread": 0.65,
+        "saturation": 0.24,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.2,
+        "shiftBottom": [
+          0.03137254901960784,
+          0.0392156862745098,
+          0.07058823529411765
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.9254901960784314,
+          0.9568627450980393
+        ],
+        "time": 16,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.9254901960784314,
+          0.9725490196078431
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "clear",
+        "weather": false
+      },
+      "name": "Pro Clarity",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.92,
+        "ambientTint": [
+          1,
+          1,
+          1
+        ],
+        "bloomIntensity": 0.1,
+        "bloomOn": true,
+        "bloomSize": 16,
+        "bloomThreshold": 1.8,
+        "brightScale": 1.06,
+        "contrast": 0.16,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "gradeOn": true,
+        "lampBoost": 1.2,
+        "lat": 15,
+        "latOn": true,
+        "mats": "HD Realistic",
+        "raysIntensity": 0.02,
+        "raysOn": true,
+        "raysSpread": 0.5,
+        "saturation": 0.12,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.05,
+        "shiftBottom": [
+          0,
+          0,
+          0
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.9882352941176471,
+          0.9882352941176471,
+          1
+        ],
+        "time": 13,
+        "timeOn": true,
+        "tint": [
+          0.9803921568627451,
+          0.9882352941176471,
+          1
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "sunset",
+        "weather": {
+          "amount": 40,
+          "fireflyColour": [
+            1,
+            0.47058823529411764,
+            0.9019607843137255
+          ],
+          "kind": "Fireflies",
+          "wind": 1
+        }
+      },
+      "name": "Retrowave",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.8,
+        "ambientTint": [
+          1.15,
+          0.8,
+          1.25
+        ],
+        "atmosphereColour": [
+          1,
+          0.47058823529411764,
+          0.7843137254901961
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.7,
+        "bloomOn": true,
+        "bloomSize": 32,
+        "bloomThreshold": 1,
+        "brightScale": 1.15,
+        "cloudsOn": false,
+        "contrast": 0.2,
+        "decay": [
+          0.43137254901960786,
+          0.1568627450980392,
+          0.6666666666666666
+        ],
+        "density": 0.36,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.22,
+        "exposureOn": true,
+        "fogColour": [
+          0.5882352941176471,
+          0.23529411764705882,
+          0.6666666666666666
+        ],
+        "fogEnd": 300,
+        "fogOn": true,
+        "fogStart": 0,
+        "glare": 0.9,
+        "gradeOn": true,
+        "haze": 2.2,
+        "lampBoost": 1.8,
+        "lampShadows": true,
+        "mats": "HD Wet",
+        "neonGlow": true,
+        "offset": 0.15,
+        "raysIntensity": 0.12,
+        "raysOn": true,
+        "raysSpread": 0.9,
+        "saturation": 0.32,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.2,
+        "shiftBottom": [
+          0.35294117647058826,
+          0.0784313725490196,
+          0.47058823529411764
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.5490196078431373,
+          0.35294117647058826
+        ],
+        "time": 17.6,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.8627450980392157,
+          0.9411764705882353
+        ],
+        "vignette": 24,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "dusk",
+        "weather": {
+          "amount": 40,
+          "kind": "Mist",
+          "mistColour": [
+            0.8627450980392157,
+            0.7450980392156863,
+            0.6666666666666666
+          ],
+          "wind": 2
+        }
+      },
+      "name": "Lo-Fi",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.88,
+        "ambientTint": [
+          1.18,
+          0.95,
+          0.8
+        ],
+        "atmosphereColour": [
+          1,
+          0.7450980392156863,
+          0.5882352941176471
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.45,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1.05,
+        "brightScale": 1.15,
+        "cloudsOn": false,
+        "contrast": 0.12,
+        "decay": [
+          0.47058823529411764,
+          0.3137254901960784,
+          0.39215686274509803
+        ],
+        "density": 0.34,
+        "dofFar": 0.18,
+        "dofFocus": 40,
+        "dofOn": true,
+        "dofRadius": 50,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.32,
+        "exposureOn": true,
+        "fogColour": [
+          0.7450980392156863,
+          0.5490196078431373,
+          0.47058823529411764
+        ],
+        "fogEnd": 260,
+        "fogOn": true,
+        "fogStart": 0,
+        "glare": 0.4,
+        "gradeOn": true,
+        "haze": 1.8,
+        "lampBoost": 2.2,
+        "lampShadows": true,
+        "mats": "HD Worn",
+        "offset": 0.1,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.02,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.3,
+        "shiftBottom": [
+          0.1568627450980392,
+          0.11764705882352941,
+          0.19607843137254902
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.7450980392156863,
+          0.5490196078431373
+        ],
+        "time": 17.4,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.8941176470588236,
+          0.803921568627451
+        ],
+        "vignette": 30,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "aurora2",
+        "weather": {
+          "amount": 40,
+          "fireflyColour": [
+            0.47058823529411764,
+            1,
+            0.7450980392156863
+          ],
+          "kind": "Fireflies",
+          "wind": 1
+        }
+      },
+      "name": "Aurora",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.72,
+        "ambientTint": [
+          0.75,
+          1.15,
+          1.1
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.55,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1,
+        "brightScale": 0.7,
+        "celestial": true,
+        "cloudsOn": false,
+        "contrast": 0.2,
+        "envDiffuse": 0.4,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": -0.15,
+        "exposureOn": true,
+        "fogColour": [
+          0.0784313725490196,
+          0.27450980392156865,
+          0.3137254901960784
+        ],
+        "fogEnd": 280,
+        "fogOn": true,
+        "fogStart": 0,
+        "gradeOn": true,
+        "lampBoost": 1.6,
+        "lampShadows": true,
+        "mats": "HD Realistic",
+        "moonSize": 18,
+        "neonGlow": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.16,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.22,
+        "shiftBottom": [
+          0.0392156862745098,
+          0.11764705882352941,
+          0.19607843137254902
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.5490196078431373,
+          1,
+          0.8235294117647058
+        ],
+        "skyOn": false,
+        "stars": 5000,
+        "sunSize": 8,
+        "time": 23,
+        "timeOn": false,
+        "tint": [
+          0.7254901960784313,
+          0.9098039215686274,
+          0.9411764705882353
+        ],
+        "vignette": 20,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "rose",
+        "weather": {
+          "amount": 95,
+          "kind": "Blossom",
+          "petalColour": [
+            1,
+            0.7450980392156863,
+            0.8431372549019608
+          ],
+          "wind": 4
+        }
+      },
+      "name": "Sakura",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.78,
+        "ambientTint": [
+          1.2,
+          0.92,
+          1.1
+        ],
+        "atmosphereColour": [
+          1,
+          0.7843137254901961,
+          0.8823529411764706
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.48,
+        "bloomOn": true,
+        "bloomSize": 26,
+        "bloomThreshold": 1.05,
+        "brightScale": 1.12,
+        "cloudColour": [
+          1,
+          0.9019607843137255,
+          0.9411764705882353
+        ],
+        "cloudCover": 0.45,
+        "cloudDensity": 0.4,
+        "cloudsOn": false,
+        "contrast": 0.1,
+        "decay": [
+          0.9019607843137255,
+          0.5882352941176471,
+          0.7450980392156863
+        ],
+        "density": 0.3,
+        "dofFar": 0.12,
+        "dofFocus": 60,
+        "dofOn": true,
+        "dofRadius": 80,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.9607843137254902,
+          0.7647058823529411,
+          0.8627450980392157
+        ],
+        "fogEnd": 300,
+        "fogOn": true,
+        "fogStart": 0,
+        "glare": 0.5,
+        "gradeOn": true,
+        "haze": 2,
+        "lampBoost": 1.1,
+        "lat": 35,
+        "latOn": true,
+        "mats": "HD Realistic",
+        "offset": 0.08,
+        "raysIntensity": 0.1,
+        "raysOn": true,
+        "raysSpread": 0.8,
+        "saturation": 0.26,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.2,
+        "shiftBottom": [
+          0.23529411764705882,
+          0.11764705882352941,
+          0.19607843137254902
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.8823529411764706,
+          0.9215686274509803
+        ],
+        "time": 7.6,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.8313725490196079,
+          0.9098039215686274
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "cumulus",
+        "weather": {
+          "amount": 30,
+          "kind": "Pollen",
+          "wind": 2
+        }
+      },
+      "name": "Summer",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.86,
+        "ambientTint": [
+          1.04,
+          1,
+          0.94
+        ],
+        "atmosphereColour": [
+          0.7058823529411765,
+          0.8431372549019608,
+          1
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.26,
+        "bloomOn": true,
+        "bloomSize": 22,
+        "bloomThreshold": 1.3,
+        "brightScale": 1.2,
+        "cloudColour": [
+          1,
+          1,
+          1
+        ],
+        "cloudCover": 0.55,
+        "cloudDensity": 0.5,
+        "cloudsOn": false,
+        "contrast": 0.17,
+        "decay": [
+          0.47058823529411764,
+          0.6274509803921569,
+          0.8627450980392157
+        ],
+        "density": 0.22,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.6666666666666666,
+          0.8235294117647058,
+          0.9607843137254902
+        ],
+        "fogEnd": 450,
+        "fogOn": true,
+        "fogStart": 20,
+        "glare": 1.2,
+        "gradeOn": true,
+        "haze": 0.6,
+        "lampBoost": 1,
+        "lat": 10,
+        "latOn": true,
+        "mats": "HD Realistic",
+        "offset": 0.05,
+        "raysIntensity": 0.12,
+        "raysOn": true,
+        "raysSpread": 0.7,
+        "saturation": 0.38,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.08,
+        "shiftBottom": [
+          0.0392156862745098,
+          0.054901960784313725,
+          0.0784313725490196
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.9725490196078431,
+          0.8823529411764706
+        ],
+        "time": 12.5,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.9803921568627451,
+          0.9333333333333333
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "amber",
+        "weather": {
+          "amount": 70,
+          "kind": "Leaves",
+          "leafColour": [
+            1,
+            0.5882352941176471,
+            0.23529411764705882
+          ],
+          "wind": 6
+        }
+      },
+      "name": "Autumn",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.64,
+        "ambientTint": [
+          1.15,
+          0.92,
+          0.75
+        ],
+        "atmosphereColour": [
+          1,
+          0.6666666666666666,
+          0.35294117647058826
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.36,
+        "bloomOn": true,
+        "bloomSize": 26,
+        "bloomThreshold": 1.2,
+        "brightScale": 1.12,
+        "cloudsOn": false,
+        "contrast": 0.18,
+        "decay": [
+          0.5882352941176471,
+          0.27450980392156865,
+          0.1568627450980392
+        ],
+        "density": 0.38,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.7843137254901961,
+          0.47058823529411764,
+          0.23529411764705882
+        ],
+        "fogEnd": 300,
+        "fogOn": true,
+        "fogStart": 0,
+        "glare": 1.5,
+        "gradeOn": true,
+        "haze": 2.4,
+        "lampBoost": 1.3,
+        "lat": 50,
+        "latOn": true,
+        "mats": "HD Worn",
+        "offset": 0.12,
+        "raysIntensity": 0.2,
+        "raysOn": true,
+        "raysSpread": 0.85,
+        "saturation": 0.2,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.14,
+        "shiftBottom": [
+          0.19607843137254902,
+          0.09411764705882353,
+          0.054901960784313725
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.7450980392156863,
+          0.47058823529411764
+        ],
+        "time": 16.8,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.8862745098039215,
+          0.7686274509803922
+        ],
+        "vignette": 20,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "nebula",
+        "weather": {
+          "amount": 50,
+          "fireflyColour": [
+            0.7450980392156863,
+            0.6274509803921569,
+            1
+          ],
+          "kind": "Fireflies",
+          "wind": 1
+        }
+      },
+      "name": "Nebula",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.72,
+        "ambientTint": [
+          0.95,
+          0.8,
+          1.3
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.65,
+        "bloomOn": true,
+        "bloomSize": 34,
+        "bloomThreshold": 0.95,
+        "brightScale": 0.7,
+        "celestial": true,
+        "cloudsOn": false,
+        "contrast": 0.2,
+        "envDiffuse": 0.4,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": -0.1,
+        "exposureOn": true,
+        "fogColour": [
+          0.27450980392156865,
+          0.1568627450980392,
+          0.47058823529411764
+        ],
+        "fogEnd": 260,
+        "fogOn": true,
+        "fogStart": 0,
+        "gradeOn": true,
+        "lampBoost": 1.7,
+        "lampShadows": true,
+        "mats": "HD Wet",
+        "moonSize": 10,
+        "neonGlow": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.3,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.22,
+        "shiftBottom": [
+          0.0784313725490196,
+          0.0392156862745098,
+          0.19607843137254902
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7843137254901961,
+          0.5882352941176471,
+          1
+        ],
+        "skyOn": false,
+        "stars": 6000,
+        "sunSize": 8,
+        "time": 0,
+        "timeOn": false,
+        "tint": [
+          0.8823529411764706,
+          0.803921568627451,
+          1
+        ],
+        "vignette": 26,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "fog",
+        "weather": {
+          "amount": 40,
+          "kind": "Snow",
+          "snowColour": [
+            0.7450980392156863,
+            0.9411764705882353,
+            1
+          ],
+          "wind": 1
+        }
+      },
+      "name": "Abyss",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.7,
+        "ambientTint": [
+          0.55,
+          1,
+          1.3
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.5,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1.05,
+        "brightScale": 0.95,
+        "cloudsOn": false,
+        "contrast": 0.18,
+        "envDiffuse": 0.4,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.22,
+        "exposureOn": true,
+        "fogColour": [
+          0.06274509803921569,
+          0.3607843137254902,
+          0.48627450980392156
+        ],
+        "fogEnd": 180,
+        "fogOn": true,
+        "fogStart": 0,
+        "gradeOn": true,
+        "lampBoost": 1.4,
+        "mats": "HD Wet",
+        "raysIntensity": 0.15,
+        "raysOn": true,
+        "raysSpread": 1,
+        "saturation": 0.1,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.4,
+        "shiftBottom": [
+          0,
+          0.0784313725490196,
+          0.1568627450980392
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.47058823529411764,
+          0.8627450980392157,
+          1
+        ],
+        "time": 12,
+        "timeOn": true,
+        "tint": [
+          0.6666666666666666,
+          0.9254901960784314,
+          1
+        ],
+        "vignette": 34,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "haze",
+        "weather": {
+          "amount": 70,
+          "kind": "Mist",
+          "mistColour": [
+            0.9215686274509803,
+            0.9411764705882353,
+            0.9725490196078431
+          ],
+          "wind": 2
+        }
+      },
+      "name": "Misty Morning",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.86,
+        "ambientTint": [
+          0.98,
+          1.02,
+          1.08
+        ],
+        "atmosphereColour": [
+          0.8627450980392157,
+          0.9019607843137255,
+          0.9411764705882353
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.32,
+        "bloomOn": true,
+        "bloomSize": 28,
+        "bloomThreshold": 1.2,
+        "brightScale": 1.05,
+        "cloudsOn": false,
+        "contrast": 0.08,
+        "decay": [
+          0.6666666666666666,
+          0.7254901960784313,
+          0.803921568627451
+        ],
+        "density": 0.55,
+        "dofFar": 0.14,
+        "dofFocus": 55,
+        "dofOn": true,
+        "dofRadius": 70,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.12,
+        "exposureOn": true,
+        "fogColour": [
+          0.8823529411764706,
+          0.9098039215686274,
+          0.9490196078431372
+        ],
+        "fogEnd": 200,
+        "fogOn": true,
+        "fogStart": 0,
+        "glare": 0.3,
+        "gradeOn": true,
+        "haze": 3,
+        "lampBoost": 1.1,
+        "mats": "HD Wet",
+        "offset": 0,
+        "raysIntensity": 0.1,
+        "raysOn": true,
+        "raysSpread": 1,
+        "saturation": -0.06,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.45,
+        "shiftBottom": [
+          0.1568627450980392,
+          0.18823529411764706,
+          0.23529411764705882
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.9607843137254902,
+          0.9411764705882353,
+          0.9215686274509803
+        ],
+        "time": 7.2,
+        "timeOn": true,
+        "tint": [
+          0.9411764705882353,
+          0.9607843137254902,
+          0.9882352941176471
+        ]
+      }
+    },
+    {
+      "extra": {
+        "sky": "haze",
+        "weather": {
+          "amount": 95,
+          "ashColour": [
+            0.8705882352941177,
+            0.6901960784313725,
+            0.4549019607843137
+          ],
+          "kind": "Ash",
+          "wind": 9
+        }
+      },
+      "name": "Sandstorm",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.8,
+        "ambientTint": [
+          1.2,
+          1,
+          0.78
+        ],
+        "atmosphereColour": [
+          0.9019607843137255,
+          0.6666666666666666,
+          0.39215686274509803
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.3,
+        "bloomOn": true,
+        "bloomSize": 26,
+        "bloomThreshold": 1.2,
+        "brightScale": 1.1,
+        "cloudsOn": false,
+        "contrast": 0.14,
+        "decay": [
+          0.7058823529411765,
+          0.47058823529411764,
+          0.27450980392156865
+        ],
+        "density": 0.62,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.8431372549019608,
+          0.6470588235294118,
+          0.39215686274509803
+        ],
+        "fogEnd": 150,
+        "fogOn": true,
+        "fogStart": 0,
+        "glare": 0.8,
+        "gradeOn": true,
+        "haze": 4,
+        "lampBoost": 1.2,
+        "mats": "HD Worn",
+        "offset": 0.05,
+        "raysIntensity": 0.06,
+        "raysOn": true,
+        "raysSpread": 0.65,
+        "saturation": 0.05,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.4,
+        "shiftBottom": [
+          0.23529411764705882,
+          0.1411764705882353,
+          0.06274509803921569
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          1,
+          0.8627450980392157,
+          0.6274509803921569
+        ],
+        "time": 14,
+        "timeOn": true,
+        "tint": [
+          1,
+          0.8941176470588236,
+          0.7450980392156863
+        ],
+        "vignette": 26,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "whiteout",
+        "weather": {
+          "amount": 100,
+          "kind": "Snow",
+          "wind": 8
+        }
+      },
+      "name": "Blizzard",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.9,
+        "ambientTint": [
+          0.92,
+          0.98,
+          1.1
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.3,
+        "bloomOn": true,
+        "bloomSize": 26,
+        "bloomThreshold": 1.2,
+        "brightScale": 1,
+        "cloudsOn": false,
+        "contrast": 0.1,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "fogColour": [
+          0.8392156862745098,
+          0.8784313725490196,
+          0.9254901960784314
+        ],
+        "fogEnd": 160,
+        "fogOn": true,
+        "fogStart": 0,
+        "gradeOn": true,
+        "lampBoost": 1.3,
+        "mats": "HD Realistic",
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": -0.22,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.6,
+        "shiftBottom": [
+          0.1568627450980392,
+          0.19607843137254902,
+          0.27450980392156865
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.9215686274509803,
+          0.9411764705882353,
+          0.9803921568627451
+        ],
+        "time": 13,
+        "timeOn": true,
+        "tint": [
+          0.9098039215686274,
+          0.9411764705882353,
+          1
+        ],
+        "vignette": 22,
+        "vignetteOn": true
+      }
+    },
+    {
+      "extra": {
+        "sky": "storm",
+        "weather": {
+          "amount": 60,
+          "emberColour": [
+            0.5882352941176471,
+            1,
+            0.23529411764705882
+          ],
+          "kind": "Embers",
+          "wind": 3
+        }
+      },
+      "name": "Toxic",
+      "pack": true,
+      "values": {
+        "ambientScale": 0.82,
+        "ambientTint": [
+          0.85,
+          1.25,
+          0.7
+        ],
+        "atmosphereOn": false,
+        "bloomIntensity": 0.6,
+        "bloomOn": true,
+        "bloomSize": 30,
+        "bloomThreshold": 1,
+        "brightScale": 0.85,
+        "cloudsOn": false,
+        "contrast": 0.22,
+        "envDiffuse": 0.45,
+        "envOn": true,
+        "envSpecular": 1,
+        "exposure": 0.05,
+        "exposureOn": true,
+        "fogColour": [
+          0.3137254901960784,
+          0.5490196078431373,
+          0.1568627450980392
+        ],
+        "fogEnd": 220,
+        "fogOn": true,
+        "fogStart": 0,
+        "gradeOn": true,
+        "lampBoost": 1.5,
+        "mats": "HD Worn",
+        "neonGlow": true,
+        "raysIntensity": 0.04,
+        "raysOn": false,
+        "raysSpread": 0.65,
+        "saturation": 0.24,
+        "shadowSoftOn": true,
+        "shadowSoftness": 0.3,
+        "shiftBottom": [
+          0.0392156862745098,
+          0.11764705882352941,
+          0.03137254901960784
+        ],
+        "shiftOn": true,
+        "shiftTop": [
+          0.7450980392156863,
+          1,
+          0.47058823529411764
+        ],
+        "time": 20,
+        "timeOn": false,
+        "tint": [
+          0.803921568627451,
+          1,
+          0.6862745098039216
+        ],
+        "vignette": 32,
+        "vignetteOn": true
+      }
+    }
+  ],
+  "weatherScenes": [
+    {
+      "look": "Overcast",
+      "name": "Misty Morning",
+      "sky": "fog",
+      "weather": {
+        "amount": 70,
+        "kind": "Mist",
+        "wind": 2
+      }
+    },
+    {
+      "look": "Overcast",
+      "name": "Snow Day",
+      "sky": "whiteout",
+      "weather": {
+        "amount": 55,
+        "kind": "Snow",
+        "wind": 4
+      }
+    },
+    {
+      "look": "Overcast",
+      "name": "Blizzard",
+      "sky": "whiteout",
+      "weather": {
+        "amount": 100,
+        "kind": "Snow",
+        "speed": 130,
+        "wind": 16
+      }
+    },
+    {
+      "look": "Night",
+      "name": "Winter Night",
+      "sky": "aurora1",
+      "weather": {
+        "amount": 45,
+        "kind": "Snow",
+        "wind": 3
+      }
+    },
+    {
+      "look": "Dusk",
+      "name": "Cherry Blossom",
+      "sky": "rose",
+      "weather": {
+        "amount": 62,
+        "kind": "Blossom",
+        "wind": 5
+      }
+    },
+    {
+      "look": "Golden Hour",
+      "name": "Autumn",
+      "sky": "golden",
+      "weather": {
+        "amount": 58,
+        "kind": "Leaves",
+        "wind": 7
+      }
+    },
+    {
+      "look": "Golden Hour",
+      "name": "Golden Pollen",
+      "sky": "sunset",
+      "weather": {
+        "amount": 62,
+        "kind": "Pollen",
+        "wind": 2
+      }
+    },
+    {
+      "look": "Night",
+      "name": "Firefly Night",
+      "sky": "mountains",
+      "weather": {
+        "amount": 65,
+        "kind": "Fireflies",
+        "wind": 1
+      }
+    },
+    {
+      "look": "Night",
+      "name": "Bonfire Night",
+      "sky": "dusk",
+      "weather": {
+        "amount": 55,
+        "kind": "Embers",
+        "wind": 3
+      }
+    },
+    {
+      "look": "Dusk",
+      "name": "Volcano",
+      "sky": "fiery",
+      "weather": {
+        "amount": 70,
+        "kind": "Ash",
+        "wind": 5
+      }
+    },
+    {
+      "fx": [
+        "stars",
+        "meteors"
+      ],
+      "look": "Night",
+      "name": "Northern Lights",
+      "sky": "aurora2"
+    },
+    {
+      "look": "Natural",
+      "name": "Clear Day",
+      "sky": "clear"
+    },
+    {
+      "fx": [
+        "stars",
+        "comets"
+      ],
+      "look": "Night",
+      "name": "Deep Space",
+      "sky": "nebula"
+    },
+    {
+      "fx": [
+        "stars",
+        "meteors"
+      ],
+      "look": "Night",
+      "name": "Starry Night",
+      "sky": "mountains"
+    },
+    {
+      "fx": [
+        "stars",
+        "meteors",
+        "comets"
+      ],
+      "look": "Night",
+      "name": "Meteor Shower",
+      "sky": "nebula"
+    },
+    {
+      "fx": [
+        "stars",
+        "runes",
+        "dust",
+        "net"
+      ],
+      "look": "Night",
+      "name": "Magic Night",
+      "sky": "aurora3"
+    },
+    {
+      "fx": [
+        "net"
+      ],
+      "look": "Night",
+      "name": "Constellation Night",
+      "sky": "mountains"
+    }
+  ]
+}
