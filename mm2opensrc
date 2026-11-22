@@ -675,10 +675,12 @@ function GScriptsTab.create(environment, hub, name, icon, context)
 	end
 	function tab.Toggle(_, options)
 		local key = not options.NoSave and (options.ConfigKey or configKey(options.Text)) or nil
-
-		local value = options.StartupDefault == true
+		local defaultValue = options.StartupDefault ~= nil and (options.StartupDefault == true) or (options.Default == true)
+		if key then context.defaults[key] = defaultValue end
+		local previous = saved(key, "boolean")
+		local value = previous ~= nil and previous or defaultValue
 		options.Default = value
-		if key then context.defaults[key] = value; store(key, value) end
+		if key then store(key, value) end
 		local current, nativeHandle = currentSection(), nil
 		environment.pcall(function()
 			nativeHandle = current:Toggle({Text = translate(options.Text), Desc = options.Desc and translate(options.Desc) or nil, Default = value,
@@ -955,10 +957,12 @@ function GScriptsTab.create(environment, hub, name, icon, context)
 
 	function tab.ToggleKey(_, options)
 		local key = not options.NoSave and configKey(options.Text) or nil
-
-		options.Default = false
-		if key then context.defaults[key] = false; store(key, false) end
-		local value = false
+		local defaultValue = options.StartupDefault ~= nil and (options.StartupDefault == true) or (options.Default == true)
+		if key then context.defaults[key] = defaultValue end
+		local previous = saved(key, "boolean")
+		local value = previous ~= nil and previous or defaultValue
+		options.Default = value
+		if key then store(key, value) end
 		local bindKey = configKey(options.Text .. " Bind")
 		local binding = options.Bind
 		local savedBinding = saved(bindKey, "string")
@@ -3554,13 +3558,19 @@ function Configuration.merge(defaults, saved)
 end
 
 function Configuration.disableFeatures(settings)
-	local function disable(values)
+	local function disable(values, isRoot)
 		for key, value in pairs(values) do
-			if type(value) == "table" then disable(value)
-			elseif type(value) == "boolean" then values[key] = false end
+			if isRoot and (key == "ctrl" or key == "rolesp" or key == "sheriff" or key == "ui") then
+				continue
+			end
+			if type(value) == "table" then
+				disable(value, false)
+			elseif type(value) == "boolean" then
+				values[key] = false
+			end
 		end
 	end
-	disable(settings)
+	disable(settings, true)
 	settings.active = true
 end
 
@@ -18259,8 +18269,12 @@ end
 
 function EspFeature.toggle(state, field, text, children)
 	local section, settings = state.context.section, state.settings
-	section:Toggle({Text = text, Default = settings[field] == true, StartupDefault = settings[field] == true, Settings = children, Callback = function(value)
-		settings[field] = not not value
+	local configRolesp = state.context.configuration and state.context.configuration.rolesp
+	local initial = (configRolesp and configRolesp[field] ~= nil) and configRolesp[field] or (settings[field] == true)
+	section:Toggle({Text = text, Default = initial, StartupDefault = initial, Settings = children, Callback = function(value)
+		local boolVal = not not value
+		settings[field] = boolVal
+		if configRolesp then configRolesp[field] = boolVal end
 		settings.onChange(field)
 	end})
 end
@@ -37957,7 +37971,7 @@ function GScriptsApplication.create(environment, parent, versions)
 	local workspace = game:GetService("Workspace")
 	local http = game:GetService("HttpService")
 	local settings = Configuration.load(environment, http, versions)
-	Configuration.disableFeatures(settings)
+	settings.active = true
 	if type(settings.ctrl) ~= "table" then settings.ctrl = {} end
 	local defaults = Configuration.defaultView(settings, versions)
 	local translation = Translation.create()
