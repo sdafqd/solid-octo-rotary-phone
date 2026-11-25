@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GScripts · Roblox Joiner</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: #0a0a0f;
+        color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        text-align: center;
+        padding: 2rem;
+        max-width: 500px;
+      }
+
+      .logo {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        background: linear-gradient(135deg, #ffffff, #888888);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .status {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .redirect-link {
+        color: #8888ff;
+        text-decoration: none;
+        border-bottom: 1px dashed #8888ff;
+      }
+
+      .redirect-link:hover {
+        color: #aaaaff;
+      }
+
+      .info {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.3);
+      }
+    </style>
+    <script>
+      function getParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      window.onload = function () {
+        const placeId = getParam("placeID");
+        const gameInstanceId = getParam("gameInstanceId");
+
+        if (placeId) {
+          let robloxUrl = `roblox://placeID=${placeId}`;
+          if (gameInstanceId) {
+            robloxUrl += `&gameInstanceId=${gameInstanceId}`;
+          }
+          window.location.href = robloxUrl;
+          document.getElementById("manualLink").href = robloxUrl;
+          document.getElementById("manualLink").style.display = "inline";
+          document.getElementById("statusText").innerText = "Redirecting to Roblox...";
+        } else {
+          document.getElementById("statusText").innerHTML = "Missing placeID parameter.";
+          document.getElementById("manualLink").style.display = "none";
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">GScripts</div>
+      <div class="status">
+        <span id="statusText">Redirecting to Roblox...</span>
+      </div>
+      <p>
+        If nothing happens, 
+        <a id="manualLink" href="#" class="redirect-link" style="display:none">click here</a>.
+      </p>
+      <div class="info">gscripts.xyz</div>
+    </div>
+  </body>
+</html>
