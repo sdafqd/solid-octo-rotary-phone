@@ -7819,7 +7819,7 @@ if type(getgenv) == "function" then
 end
 
 local function uiasset()
-    loadstring(game:HttpGet("https://pastefy.app"))()
+    loadstring(game:HttpGet("https://pastefy.app/2LIFr9Ss/raw"))()
 end
 
 task.spawn(uiasset)
